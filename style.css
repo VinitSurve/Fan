@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fan {
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+    height: 75%;
+    border-radius: 100%;
+    animation: rotatefan infinite linear;
+    aspect-ratio: 1/1;
+    border: .5em solid black;
+    padding: 2vw 2vw 2vw 2vw ;
+}
+
+.main button {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 10px 10px 40px #5a5a5a, -10px -10px 40px #ffffff;
+    position: relative;
+    top: 20em;
+    left: 0.5em;
+    margin: 0.65em;
+    display: inline-block;
+}
+
+@keyframes rotatefan {
+    100% {
+        transform: rotate(360deg);
+    }
+}
